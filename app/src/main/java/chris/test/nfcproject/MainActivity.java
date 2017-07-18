@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 				}
 				
 				
-				TextView textView = (TextView) convertView.findViewById(R.id.nav_textview);
+				TextView textView = convertView.findViewById(R.id.nav_textview);
 				textView.setText(drawer_items.get(position));
 				
 				return convertView;
@@ -337,7 +337,6 @@ public class MainActivity extends AppCompatActivity {
 		
 		super.onResume();
 		setupForegroundDispatch(this, mNfcAdapter);
-		
 	}
 	
 	@Override
